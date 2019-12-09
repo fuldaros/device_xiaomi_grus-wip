@@ -235,24 +235,14 @@
         <fqname>@1.1::IDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IPower/default</fqname>
+        <fqname>@1.2::IPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -292,18 +282,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>eSE1</instance>
-        </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
-        <fqname>@1.0::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -510,43 +488,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IPictureAdjustment</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISunlightEnhancement</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INqNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INqNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INxpNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -617,6 +558,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.limits</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
@@ -740,14 +691,14 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IUimRemoteServiceClient</name>
             <instance>uimRemoteClient0</instance>
             <instance>uimRemoteClient1</instance>
         </interface>
-        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient0</fqname>
-        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient1</fqname>
+        <fqname>@1.1::IUimRemoteServiceClient/uimRemoteClient0</fqname>
+        <fqname>@1.1::IUimRemoteServiceClient/uimRemoteClient1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_server</name>

@@ -1,3 +1,7 @@
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.soundfx.type=mi
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.sat.fallback.dist=28 \
@@ -16,10 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=5 \
     ro.hist.brightness.threshold=7
 
-# Media
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.settings.xml=/system/etc/media_profiles_vendor.xml
-
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.port=I2C
@@ -27,3 +27,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.uicc_se_enabled=true
+
+# Display postprocessing
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=1
+
+# GNSS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.flp=brcm \
+    ro.hardware.gps=brcm
