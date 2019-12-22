@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.factory.rc
+    init.target.rc
 
 # Fingerprint
 PRODUCT_PACKAGES += \

@@ -38,12 +38,6 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DRM_PP := true
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 >>>>>>> c8bca94... sirius: reworked tree for builds with vendor
