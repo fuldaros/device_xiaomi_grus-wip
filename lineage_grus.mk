@@ -1,28 +1,33 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The XenonHD Project
 #
-# Copyright (C) 2019-2020 DevelopedInside team
-#
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifer: Apache-2.0
 #
 
-$(call inherit-product, device/xiaomi/grus/device.mk)
-
-# Inherit some common Lineage stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit from grus device.
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_grus
 PRODUCT_DEVICE := grus
+PRODUCT_NAME := lineage_grus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9 SE
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Platform security patch
+# NOTE: Only bump this with appropriate build fingerprint
+PLATFORM_SECURITY_PATCH := 2019-10-01
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys" \
+    PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V11.0.4.0.PFBMIXM release-keys"
+
+BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V11.0.4.0.PFBMIXM:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="grus" \
     TARGET_DEVICE="grus"
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

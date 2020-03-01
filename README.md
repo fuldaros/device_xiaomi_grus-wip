@@ -10,7 +10,7 @@ The Xiaomi Mi 9 SE (codenamed _"grus"_) is a mid-range smartphone from Xiaomi. I
 | CPU                     | Dual-core 2.3 GHz Kryo 360 Gold + Hexa-core 1.7 GHz Kryo 360 Silver              |
 | GPU                     | 550 MHz Adreno 616                                                               |
 | Memory                  | 6 GB RAM (LPDDR4X 1866 MHz dual-channel)                                         |
-| Shipped Android Version | 10 with MIUI 11                                                            |
+| Shipped Android Version | 9 with MIUI 10.2.3.0                                                             |
 | Storage                 | 64/128 GB UFS 2.1                                                                |
 | Battery                 | Non-removable Li-Po 3070 mAh                                                     |
 | Dimensions              | 147.5 x 70.5 x 7.5 mm                                                            |
