@@ -33,6 +33,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from Xiaomi sdm710-common
 $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+# Secure element
+PRODUCT_PACKAGES += \
+    SecureElement
+
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
