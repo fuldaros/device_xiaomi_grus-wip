@@ -38,10 +38,6 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DRM_PP := true
 
-# Partitions
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
->>>>>>> c8bca94... sirius: reworked tree for builds with vendor
-
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
